@@ -7,7 +7,7 @@ function copy(name) {
     copyDiv.focus();
 
     //Select all content
-    document.execCommand('SelectAll');
+    document.execCommand('select');
 
     //Copy Content
     document.execCommand("Copy", false, null);
