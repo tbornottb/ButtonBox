@@ -7,13 +7,6 @@
         min-width: 357px;
         overflow-x: hidden;
       }
-
-      button {
-        color: #900;
-        font-weight: bold;
-        font-size: 150%;
-        text-transform: uppercase;
-      }
     </style>
 
     <!--
@@ -25,7 +18,20 @@
     <script src="popup.js"></script>
   </head>
   <body>
-        <button id="copy">( &#865;&#176; &#860;&#662; &#865;&#176;)</button>
+        <button class="btnExample" id="copy">( &#865;&#176; &#860;&#662; &#865;&#176;)</button>
+        
+        /* CSS */
+        .btnExample {
+          color: #900;
+          background: #FF0;
+          font-weight: bold;
+          border: 1px solid #900;
+        }
+         
+        .btnExample:hover {
+          color: #FFF;
+          background: #900;
+        }
   </body>
 
 </html>
