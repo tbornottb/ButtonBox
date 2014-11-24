@@ -1,7 +1,13 @@
 function copy(name) {
 
     //Get Input Element
-    document.getElementById(name).textContent.select();
+    var copyDiv = document.getElementById(name);
+
+    //Give the text element focus
+    copyDiv.focus();
+
+    //Select all content
+    document.execCommand('SelectAll');
 
     //Copy Content
     document.execCommand("Copy", false, null);
