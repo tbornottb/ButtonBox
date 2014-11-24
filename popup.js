@@ -1,7 +1,7 @@
 function copy(name) {
 
     //Get Input Element
-    document.getElementById(name).select();
+    document.getElementById(name).textContent.select();
 
     //Copy Content
     document.execCommand("Copy", false, null);
