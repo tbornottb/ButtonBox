@@ -1,12 +1,15 @@
-var client = new ZeroClipboard( document.getElementById("lenny") );
+function copyToClipboard( text ){
+                var copyDiv = document.createElement('div');
+                copyDiv.contentEditable = true;
+                document.body.appendChild(copyDiv);
+                copyDiv.innerHTML = text;
+                copyDiv.unselectable = "off";
+                copyDiv.focus();
+                document.execCommand('SelectAll');
+                document.execCommand("Copy", false, null);
+                document.body.removeChild(copyDiv);
+}
 
-client.on( "ready", function( readyEvent ) {
-  // alert( "ZeroClipboard SWF is ready!" );
-
-  client.on( "aftercopy", function( event ) {
-    // `this` === `client`
-    // `event.target` === the element that was clicked
-    event.target.style.display = "none";
-    alert("Copied text to clipboard: " + event.data["text/plain"] );
-  } );
-} );
+document.addEventListener("DOMContentLoaded", function () {
+    document.getElementById("lenny").onclick = copyToClipboard("testy testy");
+});
