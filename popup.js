@@ -1,11 +1,12 @@
-function copy(name) {
+var client = new ZeroClipboard( document.getElementById("lenny") );
 
-    getElementById("holdtext").innerText = getElementById(name).innerText;
-    Copied = getElementById("holdtext").createTextRange();
-    Copied.execCommand("Copy");
-}
+client.on( "ready", function( readyEvent ) {
+  // alert( "ZeroClipboard SWF is ready!" );
 
-//Add Event Listeners to Button Click
-document.getElementById("lenny").addEventListener("click", function() {
-    copy("lenny");
-});
+  client.on( "aftercopy", function( event ) {
+    // `this` === `client`
+    // `event.target` === the element that was clicked
+    event.target.style.display = "none";
+    alert("Copied text to clipboard: " + event.data["text/plain"] );
+  } );
+} );
