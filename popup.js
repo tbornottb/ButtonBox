@@ -4,7 +4,7 @@ function copy(name) {
     var copyDiv = document.getElementById(name);
 
     //Give the text element focus
-    copyDiv.textContent.execCommand("Copy", false, null);
+    copyDiv.innerText.execCommand("Copy", false, null);
 }
 
 //Add Event Listeners to Button Click
