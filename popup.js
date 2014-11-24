@@ -16,5 +16,6 @@ function copy(name) {
 }
 
 //Add Event Listeners to Button Click
-document.getElementById("lenny").addEventListener("click", copy("lenny"));
+document.getElementById("lenny").addEventListener("click", function() {
+    copy("lenny");
 });
