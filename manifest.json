@@ -1,0 +1,13 @@
+{
+  "manifest_version": 2,
+
+  "name": "DongerBox",
+  "description": "This extension gives you a toolbox full of your favorite faces!",
+  "version": "1.0",
+
+  "permissions":["clipboardWrite"],
+  "browser_action": {
+    "default_icon": "icon.png",
+    "default_popup": "popup.html"
+  }
+}
