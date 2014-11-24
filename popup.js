@@ -11,6 +11,8 @@ function copy() {
 
     //Copy Content
     document.execCommand("Copy", false, null);
+    
+    document.execCommand("unselect");
 }
 
 //Add Event Listeners to Button Click
