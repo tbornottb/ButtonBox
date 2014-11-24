@@ -1,7 +1,7 @@
 function copy() {
 
     //Get Input Element
-    var copyDiv = document.getElementById('text');
+    var copyDiv = document.getElementById("copy");
 
     //Give the text element focus
     copyDiv.focus();
