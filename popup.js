@@ -4,10 +4,10 @@ function copy(name) {
     var copyDiv = document.getElementById(name);
 
     //Give the text element focus
-    copyDiv.focus();
+    copyDiv.textContent.focus();
 
     //Select all content
-    document.execCommand('select');
+    document.execCommand('SelectAll');
 
     //Copy Content
     document.execCommand("Copy", false, null);
