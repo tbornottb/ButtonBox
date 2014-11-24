@@ -1,7 +1,7 @@
-function copy() {
+function copy(name) {
 
     //Get Input Element
-    var copyDiv = document.getElementById("copy");
+    var copyDiv = document.getElementById(name);
 
     //Give the text element focus
     copyDiv.focus();
@@ -17,5 +17,9 @@ function copy() {
 
 //Add Event Listeners to Button Click
 document.addEventListener("DOMContentLoaded", function () {
-    document.getElementById("copy").onclick = copy;
+    var myStringArray = ["lenny","disapproval"];
+    var arrayLength = myStringArray.length;
+    for (var i = 0; i < arrayLength; i++) {
+        document.getElementById(myStringArray[i]).onclick = copy(myStringArray[i]);
+    }
 });
