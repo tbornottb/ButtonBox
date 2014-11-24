@@ -11,5 +11,5 @@ function copyToClipboard( text ){
 }
 
 document.addEventListener("DOMContentLoaded", function () {
-    document.getElementById("lenny").onclick = copyToClipboard("testy testy");
+    document.getElementById("lenny").onclick = copyToClipboard(getElementById("lenny").innerText);
 });
