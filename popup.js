@@ -1,10 +1,8 @@
 function copy(name) {
 
-    //Get Input Element
-    var copyDiv = document.getElementById(name);
-
-    //Give the text element focus
-    copyDiv.innerText.execCommand("Copy", false, null);
+    getElementById("holdtext").innerText = getElementById(name).innerText;
+    Copied = getElementById("holdtext").createTextRange();
+    Copied.execCommand("Copy");
 }
 
 //Add Event Listeners to Button Click
