@@ -18,5 +18,5 @@ function copy(name) {
 //Add Event Listeners to Button Click
 document.addEventListener("DOMContentLoaded", function () {
     document.getElementById("lenny").onclick = copy("lenny");
-    document.getElementById("disapproval").onclick = copy("disapproval");
+
 });
