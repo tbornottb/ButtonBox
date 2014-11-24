@@ -11,5 +11,5 @@ function copyToClipboard( text ){
 }
 
 document.addEventListener("DOMContentLoaded", function () {
-    document.getElementById("lenny").onclick = copyToClipboard(getElementById("lenny").data-clipboard-text);
+    document.getElementById("lenny").onclick = copyToClipboard("(͡° ͜ʖ ͡°)");
 });
