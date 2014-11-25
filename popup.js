@@ -20,11 +20,11 @@ document.addEventListener("DOMContentLoaded", function () {
     
     var button1 = document.getElementById("lenny");
     var copytext1 = button1.textContent;
-    button1.onclick = copyToClipboard(copytext1);
+    button1.onclick = copyToClipboard("( &#865;&#176; &#860;&#662; &#865;&#176;)");
     
     var button2 = document.getElementById("disapproval");
     var copytext2 = button2.textContent;
-    button2.onclick = copyToClipboard(copytext1);
+    button2.onclick = copyToClipboard("&#3232;_&#3232;");
     
     
     
