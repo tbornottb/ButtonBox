@@ -24,7 +24,7 @@ document.addEventListener("DOMContentLoaded", function () {
     
     var button2 = document.getElementById("disapproval");
     var copytext2 = button2.textContent;
-    button2.onclick = copyToClipboard(copytext2);
+    button2.onclick = copyToClipboard(copytext1);
     
     
     
