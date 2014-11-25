@@ -11,7 +11,7 @@ function copyToClipboard( text ){
 }
 
 document.addEventListener("DOMContentLoaded", function () {
-    var buttonList = getElementsByTagName("button");
+    var buttonList = document.getElementsByTagName('button')
     for(i = 0;i < buttonList.length; i++)
                 {
                    var copytext = buttonList[i].textContent;
