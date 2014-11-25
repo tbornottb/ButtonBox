@@ -11,5 +11,6 @@ function copyToClipboard( text ){
 }
 
 document.addEventListener("DOMContentLoaded", function () {
-    document.getElementById("lenny").onclick = copyToClipboard("( &#865;&#176; &#860;&#662; &#865;&#176;)");
+    var copytext = document.getElementById("lenny").textContent;
+    document.getElementById("lenny").onclick = copyToClipboard(copytext);
 });
