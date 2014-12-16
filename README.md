@@ -1,2 +1,2 @@
-BuddyButtons
+Buddy Box
 ============
