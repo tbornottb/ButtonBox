@@ -1,4 +1,5 @@
 function copyToClipboard(text){
+return function() {
                 console.log(text);
                 var copyDiv = document.createElement('div');
                 copyDiv.contentEditable = true;
@@ -9,6 +10,7 @@ function copyToClipboard(text){
                 document.execCommand('SelectAll');
                 document.execCommand("Copy", false, null);
                 document.body.removeChild(copyDiv);
+}
 }
 
 function init(){
