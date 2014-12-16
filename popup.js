@@ -12,7 +12,7 @@ function copyToClipboard( button ){
 }
 
 document.addEventListener('DOMContentLoaded', function() {
-    var btn = document.document.getElementsByTagName('button')
+    var btn = document.getElementsByTagName('button')
     // onClick's logic below:
     btn.addEventListener('click', copyToClipboard(this));
 });
