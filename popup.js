@@ -1,4 +1,5 @@
 function copyToClipboard(text){
+                console.log(text);
                 var copyDiv = document.createElement('div');
                 copyDiv.contentEditable = true;
                 document.body.appendChild(copyDiv);
