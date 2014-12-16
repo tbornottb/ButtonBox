@@ -1,5 +1,4 @@
-function copyToClipboard( button ){
-                text = button.textContent;
+function copyToClipboard(text){
                 var copyDiv = document.createElement('div');
                 copyDiv.contentEditable = true;
                 document.body.appendChild(copyDiv);
@@ -14,6 +13,6 @@ function copyToClipboard( button ){
 document.addEventListener('DOMContentLoaded', function() {
     var btns = document.getElementsByTagName('button')
     for (var i = 0; i < btns.length; i++) { 
-       btns[i].addEventListener('click', copyToClipboard(this));
+       btns[i].addEventListener('click', copyToClipboard(btns[i].textContent));
     }
 });
