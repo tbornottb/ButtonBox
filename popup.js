@@ -11,9 +11,11 @@ function copyToClipboard(text){
                 document.body.removeChild(copyDiv);
 }
 
-document.addEventListener('DOMContentLoaded', function() {
+function init(){
     var btns = document.getElementsByTagName('button')
     for (var i = 0; i < btns.length; i++) { 
        btns[i].addEventListener('click', copyToClipboard(btns[i].textContent));
     }
-});
+}
+
+document.addEventListener('DOMContentLoaded', init);
