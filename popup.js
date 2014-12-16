@@ -11,3 +11,8 @@ function copyToClipboard( button ){
                 document.body.removeChild(copyDiv);
 }
 
+document.addEventListener('DOMContentLoaded', function() {
+    var btn = document.document.getElementsByTagName('button')
+    // onClick's logic below:
+    btn.addEventListener('click', copyToClipboard(this));
+});
